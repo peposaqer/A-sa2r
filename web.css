@@ -443,23 +443,25 @@ a {
     .name p {
         width: 100%;
         text-align: center;
+        font-size: 16px;
     }
 
     .name-div h1 {
-        font-size: 36px;
+        font-size: 26px;
     }
 
     .name-div h2 {
-        font-size: 36px;
+        font-size: 26px;
     }
 
     .more {
         margin: auto;
-        width: 45%;
+        width: 100%;
     }
 
     .home {
         background: linear-gradient( to right, #000 0%, #000 20%, black 20%, black 100%);
+        padding-bottom: 5rem;
     }
 
     .home img {
@@ -467,6 +469,7 @@ a {
         border-radius: 50%;
         width: 300px;
         margin-bottom: 2rem;
+        margin-top: 8rem;
     }
 
     .home-img {
