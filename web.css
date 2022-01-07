@@ -10,6 +10,7 @@ a {
 
 ::-webkit-scrollbar {
     width: 7px;
+    height: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -213,6 +214,7 @@ a {
     height: 100vh;
     overflow-y: scroll;
     padding-top: 3rem;
+    padding-bottom: 5rem;
 }
 
 .Portfolio{
@@ -226,6 +228,17 @@ a {
     border: 1px solid #7c7c7c;
     padding: 1rem;
     margin-bottom: 1.5rem;
+    transition: all .5s;
+}
+
+.year:hover {
+    background-color: #ffb421;
+    border: 1px solid #ffb421;
+    border-radius: 12px;
+}
+
+.year:hover h1 {
+    color: #FFF;
 }
 
 .year h1 {
@@ -235,7 +248,6 @@ a {
 
 .year h1 span {
     font-size: 30px;
-    color: #ffb421;
     position: relative;
     bottom: 1.5rem;
     right: 1rem;
@@ -415,11 +427,59 @@ a {
 
 .social i:hover {
     background-color: #ffb421;
+    transform: scale(1.2);
 }
 
 .Contact ul {
     display: flex;
     padding: 0;
+}
+
+.exp {
+    margin-bottom: 5rem;
+    display: flex;
+}
+
+.exp h3 {
+    padding: 0.3rem;
+    font-size: 18px;
+    color: #FFF;
+    margin-bottom: 2rem;
+}
+
+.exp h1 {
+    color: #FFF;
+    font-size: 32px;
+}
+
+.exp h1 span {
+    font-size: 24px;
+    color: #7c7c7c;
+}
+
+.exp p {
+    color: #7c7c7c;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+.exp i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb421;
+    border-radius: 50%;
+    margin-right: 1rem;
+    color: #FFF;
+}
+
+.exp .bre-grey {
+    width: 2px;
+    height: 100%;
+    background-color: #7c7c7c;
+    margin-left: 1.5rem;
 }
 
 @media only screen and (max-width: 768px) {
