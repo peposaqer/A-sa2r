@@ -143,11 +143,26 @@ ul li {
     color: #FFF;
     padding-right: 1.5rem;
     padding-left: 0.6rem;
+    display: none;
 }
 
-.user .active {
+.user .active  {
+    background-color: #ffb421 !important;
+    /* display: block; */
+}
+
+.user:hover span {
+    display: block;
+}
+
+.user:hover {
     background-color: #ffb421 !important;
 }
+
+.user:hover i {
+    background-color: #ffb421 !important;
+}
+
 
 .active span {
     display: block !important;

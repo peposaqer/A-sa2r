@@ -1,15 +1,15 @@
-$(".home-icons ul li a span").hide();
-$(".home-icons ul li a").hover(function(){
-    $(this).children("span").show(500);
-    $(this).children("i").css("background-color" , "#ffb421");
-    $(this).css("background-color" , "#ffb421");
-    $(this).css("padding-left" , "0.6rem");
-    }, function(){
-    $(this).children("span").hide(500);
-    $(this).children("i").css("background-color" , "#2b2a2a");
-    $(this).css("background-color" , "#2b2a2a");
-    $(this).css("padding-left" , "0rem");
-});
+// $(".home-icons ul li a span").hide();
+// $(".home-icons ul li a").hover(function(){
+//     $(this).children("span").show(500);
+//     $(this).children("i").css("background-color" , "#ffb421");
+//     $(this).css("background-color" , "#ffb421");
+//     $(this).css("padding-left" , "0.6rem");
+//     }, function(){
+//     $(this).children("span").hide(500);
+//     $(this).children("i").css("background-color" , "#2b2a2a");
+//     $(this).css("background-color" , "#2b2a2a");
+//     $(this).css("padding-left" , "0rem");
+// });
 
 
 $(".plog .plog-hide").hide();
