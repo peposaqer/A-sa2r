@@ -21,7 +21,7 @@ ul li {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #ffb421;
+    background-color: #F2A900;
     border-radius: 26px;
     border: 3px solid transparent;
 }
@@ -31,7 +31,7 @@ ul li {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background: linear-gradient( to right, #ffb421 0%, #ffb421 20%, black 20%, black 100%);
+    background: linear-gradient( to right, #F2A900 0%, #F2A900 20%, black 20%, black 100%);
     overflow-y: scroll;
 }
 
@@ -71,14 +71,14 @@ ul li {
 .name-div .name-span {
     width: 20px;
     height: 5px;
-    background-color: #ffb421;
+    background-color: #F2A900;
     margin-right: 1rem;
     border-radius: 20px;
     margin-top: 1.8rem;
 }
 
 .name-div h1 {
-    color: #ffb421;
+    color: #F2A900;
     font-size: 52px;
     font-weight: bold;
 }
@@ -147,7 +147,7 @@ ul li {
 }
 
 .user .active  {
-    background-color: #ffb421 !important;
+    background-color: #F2A900 !important;
     /* display: block; */
 }
 
@@ -156,11 +156,11 @@ ul li {
 }
 
 .user:hover {
-    background-color: #ffb421 !important;
+    background-color: #F2A900 !important;
 }
 
 .user:hover i {
-    background-color: #ffb421 !important;
+    background-color: #F2A900 !important;
 }
 
 
@@ -169,7 +169,7 @@ ul li {
 }
 
 .more {
-    border: 2px solid #ffb421;
+    border: 2px solid #F2A900;
     width: 35%;
     display: flex;
     justify-content: space-between;
@@ -184,12 +184,12 @@ ul li {
 
 .more:hover {
     color: #FFF;
-    background-color: #ffb421;
+    background-color: #F2A900;
     transition: all .5s;
 }
 
 .more i {
-    background-color: #ffb421;
+    background-color: #F2A900;
     padding: .8rem 1.5rem .8rem 1.5rem;
     border-radius: 40px;
     width: 50px;
@@ -197,7 +197,7 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #ffb421;
+    border: 2px solid #F2A900;
 }
 
 .about {
@@ -222,7 +222,7 @@ ul li {
 }
 
 .about-h1 span {
-    color: #ffb421;
+    color: #F2A900;
 }
 
 .person h2 span {
@@ -232,6 +232,12 @@ ul li {
 }
 
 .person h2 {
+    color: #FFF;
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+}
+
+.person h2 a {
     color: #FFF;
     font-size: 16px;
     margin-bottom: 1.5rem;
@@ -260,8 +266,8 @@ ul li {
 }
 
 .year:hover {
-    background-color: #ffb421;
-    border: 1px solid #ffb421;
+    background-color: #F2A900;
+    border: 1px solid #F2A900;
     border-radius: 12px;
 }
 
@@ -271,7 +277,7 @@ ul li {
 
 .year h1 {
     font-size: 60px;
-    color: #ffb421;
+    color: #F2A900;
 }
 
 .year h1 span {
@@ -306,7 +312,7 @@ ul li {
 .download {
     padding: 0rem 0rem 0rem 1.5rem;
     color: #FFF;
-    border: 2px solid #ffb421;
+    border: 2px solid #F2A900;
     border-radius: 40px;
     display: flex;
     width: 100%;
@@ -317,7 +323,7 @@ ul li {
 }
 
 .download:hover {
-    background-color: #ffb421;
+    background-color: #F2A900;
     transition: all 1s;
     color: #FFF;
 }
@@ -325,14 +331,14 @@ ul li {
 .download i {
     /* padding: .7rem 1.5rem .7rem 1.5rem; */
     color: #FFF;
-    border: 2px solid #ffb421;
+    border: 2px solid #F2A900;
     border-radius: 50%;
     width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffb421;
+    background-color: #F2A900;
 }
 
 .pro {
@@ -365,7 +371,7 @@ ul li {
 }
 
 .plog:hover {
-    background: #ffb421;
+    background: #F2A900;
 }
 
 .plog p {
@@ -418,6 +424,10 @@ ul li {
     background-image: url("img/Screen\ Shot\ 2022-01-19\ at\ 12.11.57\ PM.png");
 }
 
+.plog-11 {
+    background-image: url("img/Screenshot\ from\ 2022-10-24\ 15-12-34.png");
+}
+
 .plog h2 {
     font-size: 20px;
     color: #FFF;
@@ -454,7 +464,7 @@ ul li {
 .Contact .address i {
     font-size: 35px;
     margin-right: 1rem;
-    color: #ffb421;
+    color: #F2A900;
 }
 
 .social {
@@ -477,7 +487,7 @@ ul li {
 }
 
 .social i:hover {
-    background-color: #ffb421;
+    background-color: #F2A900;
     transform: scale(1.2);
 }
 
@@ -520,7 +530,7 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffb421;
+    background-color: #F2A900;
     border-radius: 50%;
     margin-right: 1rem;
     color: #FFF;
@@ -654,7 +664,7 @@ ul li {
 
 div[role="progressbar"] {
     --size: 12rem;
-    --fg: #ffb421;
+    --fg: #F2A900;
     --bg: #7c7c7c;
     --pgPercentage: var(--value);
     animation: growProgressBar 5s 1 forwards;
