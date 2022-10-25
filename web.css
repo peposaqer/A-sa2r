@@ -513,9 +513,9 @@ ul li {
     font-size: 32px;
 }
 
-.exp h1 span {
+.exp h1 span a {
     font-size: 24px;
-    color: #7c7c7c;
+    color: #EB4E00;
 }
 
 .exp p {
