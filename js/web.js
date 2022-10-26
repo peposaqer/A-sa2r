@@ -1,17 +1,3 @@
-
-var swiper = new Swiper(".mySwiper", {
-  cssMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  mousewheel: true,
-  keyboard: true,
-});
-
 $(".plog .plog-hide").hide();
 $(".plog").hover(function(){
     $(this).children("div").show(500);

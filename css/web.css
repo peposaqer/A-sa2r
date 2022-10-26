@@ -704,6 +704,10 @@ div[role="progressbar"]::before {
     clip-path: polygon(0% 6%, 100% 6%, 88% 100%, 12% 100%);
 }
 
+.preview p {
+    font-size: 18px;
+}
+
 .vel h2 {
     font-size: 25px;
     font-weight: bold;
