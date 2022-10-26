@@ -360,18 +360,22 @@ ul li {
 .plog {
     width: 100%;
     height: 400px;
-    /* background-image: url("img/WhatsApp\ Image\ 2021-11-26\ at\ 12.41.33\ PM.jpeg"); */
     margin-bottom: 2rem;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: ease-in-out .5s;
-    padding: 1rem;
+    /* transition: ease-in-out .5s; */
+    /* padding: 1rem; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 .plog:hover {
-    background: #F2A900;
+    background: #f2a900;
+    transition: ease-in-out .5s;
 }
 
 .plog p {
@@ -384,48 +388,48 @@ ul li {
 }
 
 .plog-2 {
-    background-image: url("img/Screen\ Shot\ 2022-01-06\ at\ 9.50.09\ PM.png");
+    background-image: url("../img/evl-1-min.png");
     background-size: cover;
 }
 
 .plog-1 {
-    background-image: url("img/Screen\ Shot\ 2022-01-06\ at\ 9.49.42\ PM.png");
+    background-image: url("../img/view-1-min.png");
 }
 
 .plog-3 {
-    background-image: url("img/Screen\ Shot\ 2022-01-06\ at\ 9.49.07\ PM.png");
+    background-image: url("../img/sign.png");
 }
 
 .plog-4 {
-    background-image: url("https://images.cakeresume.com/dXNm2/abdallahsaqer/0580e5ec-baa4-43ba-a50f-74dc3523fdb2.png");
+    background-image: url("../img/mans-3-min.png");
 }
 
 .plog-5 {
-    background-image: url("img/Screen\ Shot\ 2022-01-06\ at\ 10.02.50\ PM.png");
+    background-image: url("../img/ala-1-min.png");
 }
 
 .plog-6 {
-    background-image: url("img/Screen\ Shot\ 2022-01-06\ at\ 10.05.27\ PM.png");
+    background-image: url("../img/clinic-4.png");
 }
 
 .plog-7 {
-    background-image: url("img/Screen\ Shot\ 2022-01-06\ at\ 10.00.03\ PM.png");
+    background-image: url("../img/veyolo-1-min.png");
 }
 
 .plog-8 {
-    background-image: url("img/medtik.png");
+    background-image: url("../img/medtik-min.png");
 }
 
 .plog-9 {
-    background-image: url("img/Screen\ Shot\ 2022-01-19\ at\ 12.23.19\ PM.png");
+    background-image: url("../img/smart-1-min.png");
 }
 
 .plog-10 {
-    background-image: url("img/Screen\ Shot\ 2022-01-19\ at\ 12.11.57\ PM.png");
+    background-image: url("../img/inon-1-min.png");
 }
 
 .plog-11 {
-    background-image: url("img/Screenshot\ from\ 2022-10-24\ 15-12-34.png");
+    background-image: url("../img/gymme-1-min.png");
 }
 
 .plog h2 {
@@ -542,6 +546,216 @@ ul li {
     background-color: #7c7c7c;
     margin-left: 1.5rem;
 }
+
+
+@keyframes growProgressBar {
+    0%, 33% { --pgPercentage: 0; }
+    100% { --pgPercentage: var(--value); }
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+
+div[role="progressbar"] {
+    --size: 12rem;
+    --fg: #F2A900;
+    --bg: #7c7c7c;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 5s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+    radial-gradient(closest-side, #000 80%, transparent 0 99.9%, transparent 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+    ;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+}
+
+div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+
+.mySlides img {
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 40vh;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99999999999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* padding: 1rem; */
+}
+
+.modal-content {
+    position: relative;
+    background-color: transparent;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+    background-color: #FFF;
+  /* max-width: 1200px; */
+}
+
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    opacity: 1;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 2;
+    background-color: #F2A900;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #F2A900;
+    color: #FFF;
+}
+
+
+.slide-none {
+    display: flex;
+    background-color: #FFF;
+    flex-wrap: wrap;
+}
+
+.model-header {
+    display: flex;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.model-header a {
+    margin-right: 1rem;
+    color: #FFF;
+}
+
+.model-header a i {
+    font-size: 18px;
+}
+
+.vel {
+    position: relative;
+}
+
+.vel h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.vel-span {
+    background-color: #F2A900;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    bottom: -.3rem;
+    border-bottom: 4px solid #F2A900;
+    clip-path: polygon(0% 6%, 100% 6%, 88% 100%, 12% 100%);
+}
+
+.vel h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #F2A900;
+}
+
+.vel h2 span {
+    color: #7c7c7c;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 1;
+    transition: opacity .6s ease;
+}
+
+.carousel-indicators .active {
+    background-color: #F2A900 !important;
+}
+
+.site {
+    color: #FFF;
+    background-color: #F2A900;
+    border-radius: 35px 0 35px 0;
+    padding: 1rem;
+    transition: all .3s;
+    box-shadow: 3px 3px 11px #F2A900;
+}
+
+.site:hover {
+    color: #F2A900;
+    background-color: #FFF;
+    border-radius: 0px 35px 0px 35px;
+    transition: all .3s;
+}
+
 @media only screen and (max-width: 1250px) {
     .more {
         width: 60%;
@@ -549,6 +763,16 @@ ul li {
 }
 
 @media only screen and (max-width: 768px) {
+    .modal-content {
+        position: relative;
+        background-color: transparent;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        background-color: #FFF;
+    /* max-width: 1200px; */
+    }
+
     .name {
         height: 100%;
         text-align: center;
@@ -648,41 +872,4 @@ ul li {
         width: 100%;
         font-size: 14px;
     }
-}
-
-
-@keyframes growProgressBar {
-    0%, 33% { --pgPercentage: 0; }
-    100% { --pgPercentage: var(--value); }
-}
-
-@property --pgPercentage {
-    syntax: '<number>';
-    inherits: false;
-    initial-value: 0;
-}
-
-div[role="progressbar"] {
-    --size: 12rem;
-    --fg: #F2A900;
-    --bg: #7c7c7c;
-    --pgPercentage: var(--value);
-    animation: growProgressBar 5s 1 forwards;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    background: 
-    radial-gradient(closest-side, #000 80%, transparent 0 99.9%, transparent 0),
-    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
-    ;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: calc(var(--size) / 5);
-    color: var(--fg);
-}
-
-div[role="progressbar"]::before {
-    counter-reset: percentage var(--value);
-    content: counter(percentage) '%';
 }

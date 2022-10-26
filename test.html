@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <style>
+
+.mySlides img {
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 75vh;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99999999999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+  padding: 0;
+  width: 60%;
+  max-width: 1200px;
+}
+
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  opacity: 1;
+}
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide-none {
+  display: flex;
+  background-color: #FFF;
+  flex-wrap: wrap;
+}
+
+.slide-none .column {
+  width: 100px;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+
+
+.slide-none .column img {
+  width: 100%;
+}
+
+.model-header {
+  display: flex;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.model-header a {
+  margin-right: 1rem;
+  color: #FFF;
+}
+
+.model-header a i {
+  font-size: 18px;
+}
+
+
+.gallery-item:nth-child(1) {
+  position: absolute;
+  left: 60px;
+  top: 240px;
+}
+
+.gallery-item:nth-child(1) .hover-box{
+  background-image: url("img/medtik-min.png");
+  width: 160px;
+  height: 170px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.gallery-item:nth-child(2) {
+  position: absolute;
+  left: 282px;
+  top: 0px;
+}
+
+.gallery-item:nth-child(2) .hover-box{
+  background-image: url("img/medtik-min.png");
+  width: 290px;
+  height: 305px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.gallery-item:nth-child(3) {
+  position: absolute;
+  right: 140px;
+  top: 0px;
+}
+
+.gallery-item:nth-child(3) .hover-box{
+  background-image: url("img/medtik-min.png");
+  width: 400px;
+  height: 440px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.gallery-item:nth-child(4) {
+  position: absolute;
+  left: 330px;
+  bottom: 180px;
+}
+
+.gallery-item:nth-child(4) .hover-box{
+  background-image: url("img/medtik-min.png");
+  width: 240px;
+  height: 230px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.gallery-item:nth-child(5) {
+  position: absolute;
+  left: 0px;
+  bottom: 30px;
+}
+
+.gallery-item:nth-child(5) .hover-box{
+  background-image: url("img/medtik-min.png");
+  width: 270px;
+  height: 270px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.gallery-item:nth-child(6) {
+  position: absolute;
+  left: 630px;
+  bottom: 0px;
+}
+
+.gallery-item:nth-child(6) .hover-box{
+  background-image: url("img/medtik-min.png");
+  width: 270px;
+  height: 280px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.gallery-item:nth-child(7) {
+  position: absolute;
+  right: 60px;
+  bottom: 130px;
+}
+
+.gallery-item:nth-child(7) .hover-box{
+  background-image: url("img/medtik-min.png");
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.gallery h1 {    
+  position: relative;
+    display: block;
+    color: #ffffff;
+    font-size: 48px;
+    line-height: 1.2em;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.gallery {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.img-div {
+  position: relative;
+  height: 800px;
+}
+
+.hover-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-box a {
+  display: none;
+}
+
+.hover-box:hover a {
+  display: block;
+}
+
+.hover-box:hover {
+  border: 20px solid #28a8fc;
+  transition: .5s all;
+  opacity: 0.5;
+}
+
+
+.hover-box i {
+  color: #FFF;
+  font-size: 25px;
+}
+
+
+    </style>
+
+</head>
+<body>
+
+
+    <div class="gallery" id="gallery">
+        <div class="container">
+            <div class="text-center">
+                <div class="title-game">
+                    <h1 class="gallery_title"></h1>
+                    <span></span>
+                </div>
+            </div>
+            <div class="img-div">
+                <div class="gallery-item column fade-in">
+                    <div class="hover-box">
+                        <a href="#!" onclick="openModal();currentSlide(1)">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item column slide-left ">
+                    <div class="hover-box">
+                        <a href="#!" onclick="openModal();currentSlide(2)">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item column slide-right ">
+                    <div class="hover-box">
+                        <a href="#!" onclick="openModal();currentSlide(3)">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item column fade-in-bottom">
+                    <div class="hover-box">
+                        <a href="#!" onclick="openModal();currentSlide(4)">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item column slide-left ">
+                    <div class="hover-box">
+                        <a href="#!" onclick="openModal();currentSlide(5)">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item column fade-in">
+                    <div class="hover-box">
+                        <a href="#!" onclick="openModal();currentSlide(6)">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-item column fade-in-bottom">
+                    <div class="hover-box">
+                        <a href="#!" onclick="openModal();currentSlide(7)">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="model-header">
+            <a href="#!" class="" >
+                <i class="fa fa-play"></i>
+            </a>
+            <a href="#!" class="" onclick="openFullscreen();">
+                <i class="far fa-rectangle-wide"></i>
+            </a>
+            <a href="#!" class="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <i class="fas fa-th"></i>
+            </a>
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+        </div>
+
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 7</div>
+                <img src="img/medtik-min.png">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 7</div>
+                <img src="img/medtik-min.png">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 7</div>
+                <img src="img/medtik-min.png">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">4 / 7</div>
+                <img src="img/medtik-min.png">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 7</div>
+                <img src="img/medtik-min.png">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 7</div>
+                <img src="img/medtik-min.png">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 7</div>
+                <img src="img/medtik-min.png">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-body">
+                    <div class="slide-none">
+                        <div class="column">
+                            <img src="img/medtik-min.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column">
+                            <img src="img/medtik-min.png" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column">
+                            <img src="img/medtik-min.png" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column">
+                            <img src="img/medtik-min.png" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column">
+                            <img src="img/medtik-min.png" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column">
+                            <img src="img/medtik-min.png" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column">
+                            <img src="img/medtik-min.png" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" id="myvideo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            
+        </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+
+</html>
