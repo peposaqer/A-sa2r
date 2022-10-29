@@ -203,8 +203,9 @@ ul li {
 .about {
     background-color: #000;
     height: 100vh;
-    padding-top: 3rem;
+    padding-top: 5rem;
     overflow-y: scroll;
+    padding-bottom: 5rem;
 }
 
 .person h1 {
@@ -255,7 +256,8 @@ ul li {
     background-color: #000;
     height: 100vh;
     overflow-y: scroll;
-    padding-top: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .year {
@@ -597,6 +599,7 @@ div[role="progressbar"]::before {
     position: fixed;
     z-index: 99999999999;
     padding-top: 100px;
+    padding-bottom: 3rem;
     left: 0;
     top: 0;
     width: 100%;
@@ -643,6 +646,7 @@ div[role="progressbar"]::before {
     user-select: none;
     z-index: 2;
     background-color: #F2A900;
+    opacity: .3;
 }
 
 .next {
@@ -654,6 +658,7 @@ div[role="progressbar"]::before {
 .next:hover {
     background-color: #F2A900;
     color: #FFF;
+    opacity: 1;
 }
 
 
@@ -858,6 +863,10 @@ div[role="progressbar"]::before {
 }
 
 @media only screen and (max-width: 400px) {
+    .home {
+        padding-top: 10rem;
+    }
+
     .name p {
         width: 100%;
         text-align: center;
@@ -875,5 +884,12 @@ div[role="progressbar"]::before {
     .more {
         width: 100%;
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .home img {
+        height: 220px;
+        width: 220px;
     }
 }
