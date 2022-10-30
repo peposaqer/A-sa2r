@@ -64,3 +64,7 @@ for (i = 0; i < slides.length; i++) {
 }
 var elem = slides[slideIndex-1]
 
+
+AOS.init({
+  duration: 2000
+});
