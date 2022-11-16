@@ -111,3 +111,30 @@ const load = () => {
     animate(text4, 0, 2135, 3000);
 }
 load()
+
+
+
+
+// $("#games").select2({
+//     templateResult: formatState,
+//     templateSelection: formatState
+// });
+
+// function formatState (opt) {
+//     if (!opt.id) {
+//         return opt.text.toUpperCase();
+//     } 
+
+//     var optimage = $(opt.element).attr('data-image'); 
+//     console.log(optimage)
+//     if(!optimage){
+//        return opt.text.toUpperCase();
+//     } else {                    
+//         var $opt = $(
+//            '<span><img src="' + optimage + '" class="game-img" /> ' +  + '</span>'
+//         );
+//         return $opt;
+//     }
+// };
+
+// $('.select2-container--default .select2-search--inline .select2-search__field ').attr('placeholder','Search');

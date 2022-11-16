@@ -434,6 +434,10 @@ ul li {
     background-image: url("../img/gymme-1-min.png");
 }
 
+.plog-12 {
+    background-image: url("../img/WhatsApp\ Image\ 2022-11-16\ at\ 12.43.45\ PM.jpeg");
+}
+
 .plog h2 {
     font-size: 20px;
     color: #FFF;
@@ -893,3 +897,79 @@ div[role="progressbar"]::before {
         width: 220px;
     }
 }
+
+
+/* 
+.select2-hidden-accessible {
+  position: relative !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+#games {
+  display: flex;
+}
+
+.select2-results__options {
+  display: flex;
+  flex-flow: wrap;
+  height: 90px;
+  overflow-y: scroll;
+}
+
+.game-img {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: transparent !important;
+}
+
+.select2-results {
+  border: none;
+  background-color: #FFF;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+  width: 100% !important;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    background-image: url('https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    text-indent: 10px;
+    padding: 5px 30px;
+    transition:0.3s;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li:last-child {
+  width: 100%;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  display: flex;
+  flex-flow: wrap-reverse;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  font-size: 0;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:before {
+  content: url("img/check-solid.svg");
+  position:absolute;
+  width:20px;
+  height:20px;
+} */
