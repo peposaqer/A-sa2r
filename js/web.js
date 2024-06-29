@@ -6,7 +6,7 @@ $(".plog").hover(function(){
 });
 
 
-const links = document.querySelectorAll('.user i');
+const links = document.querySelectorAll('.user');
 const sections = document.querySelectorAll('.forJS');
 
 function changeLinkState() {
@@ -20,6 +20,7 @@ function changeLinkState() {
   if (scrollY - sections[index].offsetHeight <
         sections[index].offsetTop) {
     links[index].classList.add('active');
+    // links[index].parentElement().children("span").classList.add("active");
   }
 }
 
@@ -106,8 +107,8 @@ let text3 = document.getElementById('0103');
 let text4 = document.getElementById('0104');
 const load = () => {
     animate(text1, 0, 2, 1000);
-    animate(text2, 0, 15, 2000);
-    animate(text3, 0, 6, 1000);
+    animate(text2, 0, 25, 2000);
+    animate(text3, 0, 8, 1000);
     animate(text4, 0, 2135, 3000);
 }
 load()

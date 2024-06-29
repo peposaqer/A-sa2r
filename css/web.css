@@ -122,6 +122,7 @@ ul li {
     border-radius: 40px;
     width: 100%;
     justify-content: space-between;
+    position: relative;
 }
 
 
@@ -141,18 +142,46 @@ ul li {
     font-size: 16px;
     font-weight: bold;
     color: #FFF;
-    padding-right: 1.5rem;
-    padding-left: 0.6rem;
-    display: none;
+    /* padding-right: 4.5rem; */
+    padding-left: 1.2rem;
+    position: absolute;
+    left: 10%;
+    opacity: 0;
+    background-color: #2b2a2a;
+    border-radius: 40px;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: all .3s;
+    /* display: none; */
 }
 
-.user .active  {
+.user.active i {
     background-color: #F2A900 !important;
+    border: 1px solid #FFF !important;
+    box-shadow: none;
     /* display: block; */
 }
 
+.user.active span {
+    /* display: block; */
+    left: -209%;
+    background-color: #F2A900 !important;
+    opacity: 1;
+    height: 50px;
+    z-index: -1;
+    transition: all .3s;
+}
+
 .user:hover span {
-    display: block;
+    /* display: block; */
+    left: -209%;
+    background-color: #F2A900 !important;
+    opacity: 1;
+    z-index: -1;
+    transition: all .3s;
 }
 
 .user:hover {
@@ -161,11 +190,6 @@ ul li {
 
 .user:hover i {
     background-color: #F2A900 !important;
-}
-
-
-.active span {
-    display: block !important;
 }
 
 .more {
@@ -436,6 +460,18 @@ ul li {
 
 .plog-12 {
     background-image: url("../img/WhatsApp\ Image\ 2022-11-16\ at\ 12.43.45\ PM.jpeg");
+}
+
+.plog-13 {
+    background-image: url("../img/Screenshot\ from\ 2024-06-25\ 22-08-24.png");
+}
+
+.plog-13 {
+    background-image: url("../img/Screenshot\ from\ 2024-06-25\ 22-08-24.png");
+}
+
+.plog-14 {
+    background-image: url("../img/Screenshot\ from\ 2024-06-25\ 22-10-58.png");
 }
 
 .plog h2 {
@@ -776,6 +812,19 @@ div[role="progressbar"]::before {
 }
 
 @media only screen and (max-width: 768px) {
+
+    .user.active span {
+        display: none !important;
+    }
+
+    .user:hover span {
+        display: none !important;
+    }
+
+    .user span {
+        display: none !important;
+    }
+
     .modal-content {
         position: relative;
         background-color: transparent;
@@ -842,7 +891,7 @@ div[role="progressbar"]::before {
 
     .home-icons ul {
         display: flex;
-        background-color: #7c7c7c;
+        background-color: #F2A900;
         width: 100%;
         text-align: center;
         justify-content: center;
